@@ -1,0 +1,495 @@
+	* {
+		margin: 0;
+		padding: 0;
+	}
+	
+	.content {
+		position: absolute;
+		overflow: hidden;
+	}
+	
+	.page {
+		position: relative;
+	}
+	
+	img {
+		position: absolute;
+	}
+	
+	.page1 {
+		background: #405051;
+	}
+	
+	#happytitle {
+		left: 0;
+		right: 0;
+		margin: auto;
+	}
+	
+	#witch {
+		top: 30%;
+		left: -500px;
+		z-index: 1;
+	}
+	
+	#moon {
+		left: -500px;
+		top:10%
+	}
+	
+	#text {
+		width: 50%;
+		height: 20%;
+		position: absolute;
+		bottom: 18%;
+		left: -500px;
+	}
+	
+	h1 {
+		font-family: myfont;
+		font-size: 10em;
+		color: #9FE1B3;
+		animation: fontlight 2s linear infinite;
+	}
+	
+	h2 {
+		font-family: myfont;
+		font-size: 5em;
+		color: #9FE1B3;
+		animation: fontlight 2s linear infinite;
+	}
+	
+	@keyframes fontlight {
+		0% {
+			opacity: 1;
+		}
+		25 {
+			opacity: 0.4;
+			color: darkmagenta;
+		}
+		50% {
+			opacity: 0.6;
+			color: red;
+		}
+		75% {
+			opacity: 0.4;
+			color: darkmagenta;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	
+	.page2 {
+		background: cadetblue;
+		overflow: hidden;
+	}
+	
+	.page2-bg {
+		width: 100%;
+		height: 100%;
+	}
+	
+	.page2-caoren {
+		bottom: 40%;
+		left: 39%;
+		height: 20%;
+		display: none;
+		z-index: 1;
+	}
+	
+	.page2-shu {
+		bottom: 6%;
+		left: -10%;
+		width: 0;
+		z-index: 2;
+	}
+	
+	.page2-ghost {
+		bottom: 60%;
+		left: -100%;
+		width: 30%;
+		z-index: 1;
+		animation: move_run 8s linear infinite;
+	}
+	
+	.page2-nangua1 {
+		bottom: 6%;
+		left: 14%;
+		width: 10%;
+		z-index: 3;
+		display: none;
+	}
+	
+	.page2-nangua2 {
+		bottom: 11%;
+		left: 31%;
+		width: 15%;
+		z-index: 1;
+		display: none;
+		animation: rotate 0.2s linear infinite;
+	}
+	
+	.page2-nangua5 {
+		bottom: 25%;
+		left: 29%;
+		width: 9%;
+		z-index: 1;
+		display: none;
+		animation: rotate 0.2s linear infinite;
+	}
+	
+	.page2-nangua {
+		bottom: 2%;
+		left: 57%;
+		width: 50%;
+		display: none;
+	}
+	
+	.page2-angel {
+		bottom: 72%;
+		right: -100%;
+		width: 35%;
+	}
+	
+	.page3 {
+		background: #f2965f;
+	}
+	
+	#qq {
+		width: 80%;
+		height: 80%;
+		left: 12%;
+		top: 5%;
+	}
+	
+	#zi {
+		width: 400px;
+		height: 180px;
+		top: 4%;
+		right: 30%;
+		position: absolute;
+		animation: zooming 3s linear infinite;
+	}
+	
+	#bg {
+		width: 100%;
+		height: 100%;
+	}
+	
+	#gui {
+		width: 200px;
+		height: 300px;
+		left: 10px;
+		bottom: 50px;
+		animation: moverun 10s linear infinite;
+		display: none;
+	}
+	
+	#gui2 {
+		width: 300px;
+		height: 300px;
+		left: 10px;
+		bottom: 10px;
+		animation: moverun2 8s linear infinite;
+		display: none;
+	}
+	
+	.page4 {
+		background: #000;
+		overflow: hidden;
+	}
+	
+	.bg3 {
+		z-index: 2;
+		width: 1200px;
+		height: 1200px;
+		position: absolute;
+		top: 0%;
+		overflow: hidden;
+	}
+	
+	.bg1 {
+		width: 1200px;
+		height: 1000px;
+		position: absolute;
+		left: 0;
+		bottom: 0%;
+		margin: auto;
+		overflow: hidden;
+	}
+	
+	#fly {
+		z-index: 1;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		left: 6%;
+		top: 1%;
+	}
+	
+	#lfly {
+		z-index: 1;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		right: 6%;
+		top: 10%;
+	}
+	
+	.tree {
+		width: 800px;
+		height: 1200px;
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		overflow: hidden;
+	}
+	
+	.grim {
+		z-index: 1;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		bottom: 15%;
+		left: 0;
+	}
+	
+	.mummy {
+		z-index: 1;
+		width: 200px;
+		height: 200px;
+		position: absolute;
+		bottom: 14%;
+		right: 14%;
+	}
+	
+	.moon1 {
+		z-index: 1;
+		width: 800px;
+		height: 800px;
+		position: absolute;
+		top: -10%;
+		right: -20%;
+		overflow: hidden;
+	}
+	
+	#paint {
+		z-index: 1;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		left: 10%;
+		bottom: 28%;
+	}
+	
+	.spider {
+		z-index: 1;
+		width: 130px;
+		height: 130px;
+		position: absolute;
+		left: 5%;
+		bottom: 40%;
+	}
+	
+	.wang {
+		z-index: 1;
+		width: 230px;
+		height: 430px;
+		position: absolute;
+		left: 0%;
+		bottom: 46%;
+	}
+	
+	.page5 {
+		background: blue;
+	}
+	
+	.page5-Bg {
+		width: 100%;
+		height: 90%;
+	}
+	
+	.page5-witch {
+		top: 43%;
+		left: 60%;
+		animation: yaocai 2s linear infinite;
+	}
+	
+	.page5-tim {
+		width: 1000px;
+		height: 300px;
+		bottom: -3%;
+	}
+	
+	.page5-head {
+		bottom: 7%;
+		height: 50px;
+		left: 100px;
+		animation: moves 2s linear infinite;
+	}
+	
+	.page5-body {
+		bottom: 5%;
+		height: 50px;
+		left: 100px;
+		animation: moves 2s linear infinite;
+	}
+	
+	.page5-ghost {
+		bottom: 5%;
+		height: 50px;
+		left: 500px;
+		animation: yaohuang 2s linear infinite;
+	}
+	
+	@keyframes moves {
+		0% {
+			transform: translate(300px, 10px);
+		}
+		50% {
+			transform: translate(10px, 10px);
+		}
+		100% {
+			transform: translate(300px, 10px);
+		}
+	}
+	
+	@keyframes yaohuang {
+		0% {
+			transform: translate(300px, 10px);
+		}
+		50% {
+			transform: translate(10px, 10px);
+		}
+		100%{
+			transform: translate(300px, 10px);
+		}
+	}
+	
+	@keyframes zooming {
+		0% {
+			transform: scale(1);
+		}
+		50% {
+			transform: scale(0.7);
+		}
+		100% {
+			transform: scale(1);
+		}
+	}
+	
+	@keyframes moverun {
+		0% {
+			transform: translate(10px, 50px);
+		}
+		50% {
+			transform: translate(10px, -600px);
+		}
+		100% {
+			transform: translate(10px, 50px);
+		}
+	}
+	
+	@keyframes moverun2 {
+		0% {
+			transform: translate(300px, 10px);
+		}
+		50% {
+			transform: translate(10px, 10px);
+		}
+		100% {
+			transform: translate(300px, 10px);
+		}
+	}
+	
+	@keyframes rotate {
+		0% {}
+		16% {
+			transform: rotate(10deg);
+		}
+		32% {
+			transform: rotate(0deg);
+		}
+		48% {
+			transform: rotate(0deg);
+		}
+		64% {
+			transform: rotate(-10deg);
+		}
+		80% {
+			transform: rotate(0deg);
+		}
+		100% {
+			transform: rotate(0deg);
+		}
+	}
+	
+	@keyframes move_run {
+		0% {
+			transform: translate(0, 0);
+		}
+		25% {
+			transform: translate(-10px, -100px);
+		}
+		50% {
+			transform: translate(-60px, 320px);
+		}
+		75% {
+			transform: translate(100px, -100px);
+		}
+		100% {
+			transform: translate(0px, 0px);
+		}
+	}
+	
+	@-webkit-keyframes twinkling {
+		/*透明度由0到1*/
+		0% {
+			opacity: 0.3;
+			/*透明度为0*/
+		}
+		25% {
+			opacity: 0.5;
+		}
+		50% {
+			opacity: 0.7;
+		}
+		100% {
+			opacity: 1;
+			/*透明度为1*/
+		}
+		50% {
+			opacity: 0.7;
+		}
+		25% {
+			opacity: 0.5;
+		}
+		0% {
+			opacity: 0.3;
+			/*透明度为0*/
+		}
+	}
+	
+	@keyframes yaocai {
+		0% {
+			transform: rotate(40deg);
+		}
+		25% {
+			transform: rotate(50deg);
+		}
+		50% {
+			transform: rotate(40deg);
+		}
+		75% {
+			transform: rotate(30deg);
+		}
+		100% {
+			transform: rotate(40deg);
+		}
+	}
+	
+	@font-face {
+		font-family: "myfont";
+		src: url('HVD_Poster_Clean.ttf');
+	}
