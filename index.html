@@ -1,219 +1,358 @@
 <!DOCTYPE html>
-<html lang="zh-Hans-CN">
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta name="renderer" content="webkit">
-    <meta name="viewport" content="width=device-width" />
-    <title>首页模板</title>
-    <link href="layui/css/layui.css" rel="stylesheet" type="text/css">
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="css/index_style.css" rel="stylesheet" type="text/css">
-    <link href="css/animate.min.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>贺卡样试选择</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        h2 {
+            margin: 20px;
+            color: #666;
+            margin-left: 200px;
+        }
+        
+        #box {
+            width: 1260px;
+            height: 800px;
+            margin: 0 auto;
+        }
+        
+        #box li {
+            width: 400px;
+            height: 304px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+            list-style: none;
+            overflow: hidden;
+            border-radius: 10px;
+            float: left;
+            box-shadow: #ccc 0px 0px 5px;
+            position: relative;
+            left: 0;
+            top: 0;
+            transition: all 0.7s;
+        }
+        
+        #box li:hover {
+            height: 500px;
+        }
+        
+        #box li .bt {
+            width: 400px;
+            height: 56px;
+            font-family: "Microssoft YaHei";
+            color: #333;
+            font-size: 18px;
+            line-height: 56px;
+            padding: 4px 20px;
+            box-sizing: border-box;
+        }
+        
+        #box li .img {
+            width: 400px;
+            height: 244px;
+            cursor: pointer;
+            background-size: 100% auto;
+            /*tiansition:all 0.7s;*/
+        }
+        /*#box li .img:hover{
+            background-size:90%;
+        }*/
+        
+        #box li:nthchild(1).img {
+            background: url("https://i01piccdn.sogoucdn.com/7accf328df2281fe";
+            ) center center no-repeat;
+        }
+        
+        #box li:nthchild(2).img {
+            background: url("https://i03piccdn.sogoucdn.com/fc74e553f60f7f69";
+            ) center center no-repeat;
+        }
+        
+        #box li:nthchild(3).img {
+            background: url("https://i01piccdn.sogoucdn.com/3a4c785d54114bc3";
+            ) center center no-repeat;
+        }
+        
+        #box li .bf {
+            width: 400px;
+            height: 60px;
+            background-color: cornflowerblue;
+            text-align: center;
+            line-height: 60px;
+            color: white;
+            border-radius: 0 0 15px 15px;
+            font-size: 18px;
+            position: absolute;
+            transition: all 0.5s;
+            left: 0;
+            bottom: 0;
+            cursor: pointer;
+        }
+        
+        #box li:nth-child(2) .bf {
+            background: tomato;
+        }
+        
+        #box li .bf:hover {
+            font-size: 22px;
+        }
+        
+        #box li .infor {
+            widows: 400px;
+            height: 4Opx;
+            padding: 8px 20px;
+            box-sizing: border-box;
+        }
+        
+        #box li .infor .xj {
+            color: #FF403E;
+            font-size: 18px;
+            margin-right: 15px;
+        }
+        
+        #box li .infor .yj {
+            color: #666;
+            text-decoration: line-through;
+            font-size: 14px;
+            margin-right: 150px;
+        }
+        
+        #box li .infor .lx {
+            color: #666;
+            /* text-decoration:line-through;*/
+            font-weight: 600;
+            font-size: 16px;
+            /* margin-right:150px; */
+        }
+        
+        #box li .teacher {
+            width: 400px;
+            height: 80px;
+            padding: 16px 20px;
+            box-sizing: border-box;
+        }
+        
+        #box li .teacher img {
+            width: 46px;
+            height: 46px;
+            border-radius: 50%;
+            float: left;
+            cursor: pointer;
+        }
+        
+        #box li .teacher div {
+            margin-left: 10px;
+            float: left;
+        }
+        
+        #box li .teacher div p:nth-child(1) {
+            font-weight: 700;
+            font-size: 16px;
+            color: #333;
+            padding: 3px;
+        }
+        
+        #box li .teacher div p:nth-child(2) {
+            font-size: 14px;
+            color: #666;
+        }
+    </style>
 </head>
+
 <body>
-    <div id="menu" class="hover_animation menu_open" data-mark="false">
-        <span></span>
-        <span></span>
-        <span></span>
-    </div>
-    <div id="navgation" class="navgation navgation_close">
-        <ul class="point">
-            <li><a href="#">首页</a></li>
-            <li><a href="article.html">博客</a></li>
-            <li><a href="message.html">留言</a></li>
+    <h2>-样式浏览-</h2>
+    <div id="box">
+
+        <ul>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1821833798,1904869353&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">万圣节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+            <li>
+            	<a href="https://www.baidu.com/">
+                <div class="img">
+                	<img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1139079176,2424025577&fm=26&gp=0.jpg" height="340" width="400">
+                </div>
+				</a>
+                <div class="bt">复活节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fimages.669pic.com%2Felement_pic%2F84%2F74%2F89%2F75%2F38b03dfa214005853def7b8eecadd88a.jpg%21w700wb&refer=http%3A%2F%2Fimages.669pic.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=jpeg?sec=1616732992&t=f3b29a001bc36d4baac10ede9f1689fd" height="340" width="400"></a>
+                </div>
+                <div class="bt">春节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
         </ul>
-        <div class="logo"><a>Mr.Yss</a></div>
+
+        <ul>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2500902159,175094309&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">元宵节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1819772879,2655530164&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">母亲节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4172965734,4284313035&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">父亲节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+        </ul>
+
+        <ul>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=446557216,2594256867&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">七夕节</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1250215931,4294088138&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">孩童生日</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+            <li>
+                <div class="img">
+                	<a href="https://www.baidu.com/"><img src="https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=4122429343,3388989230&fm=26&gp=0.jpg" height="340" width="400"></a>
+                </div>
+                <div class="bt">长辈生日</div>
+                <div class="infor">
+                    <span class="xj">免费</span>
+                    <span class="yj">原价：￥9</span>
+                    <span class="lx">电子贺卡</span>
+                </div>
+                <div class="teacher">
+                    <img src="https://i03piccdn.sogoucdn.com/9ed004983742311a" ; alt="">
+                    <div>
+                        <p>预览</p>
+                        <p>我的时间最强指令师</p>
+                    </div>
+                </div>
+                <div class="bf">选择</div>
+            </li>
+        </ul>
     </div>
-    <div class="section" id="section1">
-        <div class="fp-tablecell">
-            <div class="page1">
-                <div class="nav wow zoomIn" data-wow-duration="2s">
-                    <h1>S1gehaore</h1>
-                    <p>剑气纵横三万里,一剑光寒十九洲</p>
-                    <a class="layui-btn layui-btn-normal" style="margin-top: 20px" href="#">ding!</a>
-                </div>
-                <a class="next wow fadeInUp" data-wow-duration="2s" id="next"></a>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section2">
-        <div class="fp-tablecell">
-            <div class="page2">
-                <div class="warp-box">
-                    <div class="new-article">
-                        <div class="inner wow fadeInDown" data-wow-delay=".2s">
-                            <h1>热门文章</h1>
-                            <p>
-                                很想给你写封信,告诉你这里的天气.
-                                <br>昨夜的那场电影,还有我的心情.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="layui-row">
-                        <div class="layui-col-xs12 layui-col-sm4 layui-col-md4  wow fadeInUp" style="padding: 0 10px">
-                            <div class="single-news">
-                                <div class="news-head">
-                                    <img src="image/1.jpg">
-                                    <a href="#" class="link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="news-content">
-                                    <h4>
-                                        <a href="#">
-                                            标题
-                                        </a>
-                                    </h4>
-                                    <div class="date">
-                                        2017年2月16日
-                                    </div>
-                                    <p>
-                                        很想给你写封信,告诉你这里的天气. 昨夜的那场电影,还有我的心情.
-                                    </p>
-                                    <a href="#" class="btn">
-                                        阅读更多 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="layui-col-xs12 layui-col-sm4 layui-col-md4  wow fadeInUp" data-wow-delay=".2s" style="padding: 0 10px">
-                            <div class="single-news">
-                                <div class="news-head">
-                                    <img src="image/1.jpg">
-                                    <a href="#" class="link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="news-content">
-                                    <h4>
-                                        <a href="#">
-                                            标题
-                                        </a>
-                                    </h4>
-                                    <div class="date">
-                                        2017年2月16日
-                                    </div>
-                                    <p>
-                                        很想给你写封信,告诉你这里的天气. 昨夜的那场电影,还有我的心情.
-                                    </p>
-                                    <a href="#" class="btn">
-                                        阅读更多 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="layui-col-xs12 layui-col-sm4 layui-col-md4  wow fadeInUp" data-wow-delay=".4s" style="padding: 0 10px">
-                            <div class="single-news">
-                                <div class="news-head">
-                                    <img src="image/1.jpg">
-                                    <a href="#" class="link"><i class="fa fa-link"></i></a>
-                                </div>
-                                <div class="news-content">
-                                    <h4>
-                                        <a href="#">
-                                            标题
-                                        </a>
-                                    </h4>
-                                    <div class="date">
-                                        2017年2月16日
-                                    </div>
-                                    <p>
-                                        很想给你写封信,告诉你这里的天气. 昨夜的那场电影,还有我的心情.
-                                    </p>
-                                    <a href="#" class="btn">
-                                        阅读更多 
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section3">
-        <div class="fp-tablecell">
-            <div class="page3">
-                <div class="warp-box">
-                    <div class="warp">
-                        <div class="inner">
-                            <div class="links">
-                                <ul>
-                                    <li class="wow fadeInLeft"><a href="#">关于</a></li>
-                                    <li class="wow fadeInRight"><a href="#">+友情链接</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="section" id="section4">
-        <div class="fp-tablecell">
-            <div class="page4">
-                <div class="warp-box">
-                    <div class="about">
-                        <div class="inner">
-                            <h1 class="wow fadeInLeft">次元使者</h1>
-                            <p class="wow fadeInRight">
-                                爱好游戏，动漫。闲来无事喜欢在一些不健康的场所虚度光阴，撸起代码就会废寝忘食。
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer class="footer wow fadeInUp" id="contact">
-        <div class="footer-top">
-            <div class="container">
-                <div class="layui-row">
-                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
-                        <div class="single-widget about">
-                            <div class="footer-logo">
-                                <h2>S1gehaore</h2>
-                            </div>
-                            <p>剑气纵横三万里，一剑光寒十九洲。</p>
-                            <div class="button">
-                                <a href="#" class="btn layui-btn layui-btn-normal">About Me</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="layui-col-xs12 layui-col-sm6 layui-col-md4">
-                        <div class="single-widget">
-                            <h2>相关链接</h2>
-                            <ul class="social-icon">
-                                <li class="active"><a href="#"><i class="fa fa-book"></i>博文</a></li>
-                                <li class="active"><a href="#"><i class="fa fa-comments"></i>留言</a></li>
-                                <li class="active"><a href="#"><i class="fa fa-share"></i>资源</a></li>
-                                <li class="active"><a href="#"><i class="fa fa-snowflake-o"></i>日记</a></li>
-                                <li class="active"><a href="#"><i class="fa fa-files-o"></i>归档</a></li>
-                            </ul>                   
-                        </div>
-                    </div>
-                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md4">
-                        <div class="single-widget contact">
-                            <h2>联系我</h2>
-                            <ul class="list">
-                                <li><i class="fa fa-map"></i>地址: ***</li>
-                                <li><i class="fa fa-qq"></i>QQ: 2352258674 </li>
-                                <li><i class="fa fa-envelope"></i>邮箱: 2352258674@qq.com</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="copyright">
-            <div class="container">
-                <div class="layui-row">
-                    <div class="layui-col-xs12 layui-col-sm12 layui-col-md12 text-center">
-                        <p>Copyright &copy; </p>
-                    </div>
-                </div>
-            </div>
-        </div>  
-    </footer>
-    <script src="layui/layui.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/index.js"></script>
 </body>
+
 </html>
